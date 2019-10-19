@@ -1,0 +1,46 @@
+body {
+    background-image: "images\background.png";
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center {
+    margin: auto;
+    margin-top: 10%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+th {
+    background-color: rgb(159, 159, 255);
+}
+
+td {
+    background-color: white ;
+    height: 100px;   
+}
+
+.break {
+    width: 385px;
+    display: block;
+    word-wrap:break-word; 
+}
+
+input {
+    overflow-wrap: break-word;
+    height: 100%;
+    width: 99.1%;
+    font-size: 20px;
+}   
+
+textarea {
+    overflow: auto;
+    width: 99.1%;
+    height: 100%;
+    border: none;
+    resize: none;
+    font-size: 18px;
+}
