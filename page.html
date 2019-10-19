@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unseen translator</title>
+    <link rel="icon" href="images\unseen-logo.png">
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th>Unseen</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td><input id="Unseen" oninput=Translate()></input></td>
+            <td><span id="Translation"></span></td>
+        </tr>
+    </table>
+
+    <script>
+
+        function Translate(){
+            var Translation = document.getElementById("Unseen").value; 
+            Translation = Translation.replace(/ㅏ/g, "A"); // if ㅏ then A
+
+            Translation = Translation.replace(/Б/g, "B"); // if Б then B
+                Translation = Translation.replace(/б/g, "B"); // if б then B
+
+            Translation = Translation.replace(/C/g, "C"); // if C then C
+                Translation = Translation.replace(/𑀘/g, "C"); // if 𑀘 then C
+
+            Translation = Translation.replace(/Δ/g, "D"); // if Δ then D
+
+            Translation = Translation.replace(/Э/g, "E"); // if Э then E
+
+            Translation = Translation.replace(/Ф/g, "F"); // if Ф then F
+
+            Translation = Translation.replace(/Γ/g, "G"); // if Γ then G
+
+            Translation = Translation.replace(/ㅎ/g, "H"); // if ㅎ then H
+
+            Translation = Translation.replace(/И/g, "I"); // if И then I
+
+            Translation = Translation.replace(/𑀛/g, "J"); // if 𑀛 then J
+                Translation = Translation.replace(/ㅈ/g, "J"); // if ㅈ then J
+
+            Translation = Translation.replace(/ㅋ/g, "K"); // if ㅋ then K
+
+            Translation = Translation.replace(/Λ/g, "L"); // if Λ then L
+
+            Translation = Translation.replace(/ㅁ/g, "M"); // if C then M
+
+            Translation = Translation.replace(/N/g, "N"); // if N then N
+                Translation = Translation.replace(/𑀦/g, "N"); // if 𑀦 then N
+
+            Translation = Translation.replace(/Ω/g, "O"); // if Ω then O
+            
+            Translation = Translation.replace(/Π/g, "P"); // if Π then P
+
+            Translation = Translation.replace(/Q/g, "Q"); // if Q then Q
+
+            Translation = Translation.replace(/ㄹ/g, "R"); // if ㄹ then R
+
+            Translation = Translation.replace(/Σ/g, "S"); // if Σ then S
+
+            Translation = Translation.replace(/T/g, "T"); // if T then T
+
+            Translation = Translation.replace(/U/g, "U"); // if U then U
+
+            Translation = Translation.replace(/V/g, "V"); // if V then V
+                Translation = Translation.replace(/𑀯/g, "V"); // if 𑀯 then V
+
+            Translation = Translation.replace(/W/g, "W"); // if W then W
+
+            Translation = Translation.replace(/X/g, "X"); // if X then X
+
+            Translation = Translation.replace(/Y/g, "Y"); // if Y then Y
+
+            Translation = Translation.replace(/З/g, "Z"); // if Z then Z
+
+
+        
+        document.getElementById("Translation").innerHTML = Translation;
+    }
+
+
+    </script>
+
+</body>
+</html>
