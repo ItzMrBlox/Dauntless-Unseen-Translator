@@ -41,34 +41,34 @@ def translate(phrase):
         elif letter in "ㅁ": #if ㅁ then M
             translation = translation + "M"
 
-        elif letter in "N𑀦": #if Δ then N
+        elif letter in "N𑀦": #if N𑀦 then N
             translation = translation + "N"
 
-        elif letter in "Ω": #if Э then O
+        elif letter in "Ω": #if Ω then O
             translation = translation + "O"
 
-        elif letter in "Π": #if Ф then P
+        elif letter in "Π": #if Π then P
             translation = translation + "P"
 
-        elif letter in "Q": #if Γ then Q
+        elif letter in "Q": #if Q then Q
             translation = translation + "Q"
 
-        elif letter in "ㄹ": #if ㅎ then R
+        elif letter in "ㄹ": #if ㄹ then R
             translation = translation + "R"
 
-        elif letter in "Σ": #if И then S
+        elif letter in "Σ": #if Σ then S
             translation = translation + "S"
 
-        elif letter in "T": #if ㅈ𑀛 then T
+        elif letter in "T": #if T then T
             translation = translation + "T"
 
-        elif letter in "U": #if ㅋ then U
+        elif letter in "U": #if U then U
             translation = translation + "U"
 
-        elif letter in "V𑀯": #if Λ then V
+        elif letter in "V𑀯": #if V𑀯 then V
             translation = translation + "V"
 
-        elif letter in "W": #if ㅁ then W
+        elif letter in "W": #if W then W
             translation = translation + "W"
 
         elif letter in "X": #if X then X
