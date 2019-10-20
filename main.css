@@ -18,10 +18,8 @@ th {
     background-color: #34a6ed;
 }
 
-td {
-    background-color: white;
+.tdtext {
     height: 100px;   
-    opacity: 0.94;
 }
 
 .break {
@@ -56,4 +54,13 @@ textarea {
 span {
     color: #00ddff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+td {
+    opacity: 0.94;
+    background-color: white;
+}
+
+.centertext {
+    text-align: center;
 }
