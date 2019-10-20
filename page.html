@@ -25,7 +25,10 @@
     <script>
 
         function TranslatetoUnseen(){
+        
             var Translation = document.getElementById("Unseen").value; 
+
+
             Translation = Translation.replace(/ㅏ/g, "A"); // if ㅏ then A
 
             Translation = Translation.replace(/Б/g, "B"); // if Б then B
@@ -83,12 +86,17 @@
 
             Translation = Translation.replace(/З/g, "Z"); // if Z then Z
 
+            Translation = Translation.replace(/\s\s+/g, ' '); // when to many spaces
+            Translation = Translation.toLowerCase();
 
-        document.getElementById("English").innerHTML = Translation.toLowerCase();
+
+        document.getElementById("English").value = Translation.length === 0? "" : Translation[0].toUpperCase() + Translation.slice(1);
     }
 
 
+
     function TranslatetoEnglish(){
+            
             var TranslationEng = document.getElementById("English").value; 
             
             TranslationEng = TranslationEng.replace(/A/g, "ㅏ"); // if A then ㅏ
@@ -133,7 +141,6 @@
             TranslationEng = TranslationEng.replace(/N/g, "N"); // if N then N
                 TranslationEng = TranslationEng.replace(/n/g, "N"); // if n then N
 
-
             TranslationEng = TranslationEng.replace(/O/g, "Ω"); // if O then Ω
                 TranslationEng = TranslationEng.replace(/o/g, "Ω"); // if o then Ω
 
@@ -170,8 +177,12 @@
             TranslationEng = TranslationEng.replace(/Z/g, "З"); // if Z then З
                 TranslationEng = TranslationEng.replace(/z/g, "З"); // if z then З
 
-        document.getElementById("Unseen").innerHTML = TranslationEng;
-    }
+
+            TranslationEng = TranslationEng.replace(/\s\s+/g, '  '); // Adds 1 more space
+
+        document.getElementById("Unseen").value = TranslationEng;
+        }
+    
 
     </script>
 
