@@ -21,6 +21,7 @@ th {
 td {
     background-color: white;
     height: 100px;   
+    opacity: 0.94;
 }
 
 .break {

@@ -3,8 +3,8 @@ Unseen Language
 Last updated - 19/10/2019
 
 A -> ㅏ
-B -> Б
-C -> C
+B -> Б/б
+C -> C/𑀘
 D -> Δ
 E -> Э
 F -> Ф
