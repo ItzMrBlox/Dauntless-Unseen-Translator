@@ -15,11 +15,11 @@ table, th, td {
   }
 
 th {
-    background-color: rgb(159, 159, 255);
+    background-color: #34a6ed;
 }
 
 td {
-    background-color: white ;
+    background-color: white;
     height: 100px;   
 }
 
@@ -49,4 +49,10 @@ textarea {
 
 .Marcellus {
     font-family: "Marcellus";
+}
+
+
+span {
+    color: #00ddff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
