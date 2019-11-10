@@ -2,4 +2,4 @@
 
 https://itzmrblox.github.io/Unseen-Translator/page.html
 
-https://dauntless-unseen.com/page.html
+https://dauntless-unseen.com
