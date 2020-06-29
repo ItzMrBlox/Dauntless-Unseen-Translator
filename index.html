@@ -1,87 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Unseen Translator</title>
-    <link rel="icon" href="images\unseen-logo.png">
-    <link rel="stylesheet" href="assets\main.css">
-    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
-    <script src="scripts\translate.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dauntless Unseen Mystery</title>
+
+    <link rel="icon" href="assets\images\unseen-logo.png">
+    <link rel="stylesheet" href="main.css"> 
+
+    <script src="scripts\MY5T3RY.js"></script>
+    <script src="scripts\misc.js"></script>
 </head>
+<body>
+    <a href="index.html">
+        <div id="home" class="HomeReturn">
+            <center><img id="myImg" name="Why am I flashing?" src="assets\images\Dauntless Logo.png" width="2%" height="2%" onmouseover="MouseOver()" onmouseout="MouseOut()"><img src="assets\images\dauntless-logo-horizontal-white.png" width="12%" height="12%" style="padding-left: 5px;"></center>
+        </div>
+    </a>
+    <div class="mainbox">
 
-<body background="images\background.png">
-    <center><img id="myImg" src="images\Dauntless Logo.png" width="2%" height="2%" align="middle" onmouseover="MouseOver()" onmouseout="MouseOut()">     <img src="images\dauntless-logo-horizontal-white.png" width="12%" height="12%" align="middle" style="padding-left: 5px;"></center>
+        <p>Welcome to the Dauntless Unseen Mystery</p>
+            <a href="Translation.html">
+                <div class="mainbox-subbox" id="translatorbutton">
+                    Unseen Language Translator
+                </div>
+            </a>    
 
-    <br>
-    <table align="center" class="center Marcellus" width="50%">
-        <tr style="font-size: 150%;">
-            <th width="386"><span>Unseen</span></th>
-            <th width="386"><span>English</span></th>
-        </tr>
-        <tr>
-            <td class="tdtext"><textarea id="Unseen" oninput=TranslatetoUnseen() size="4" wrap="hard" draggable="false" placeholder="Enter Unseen text here"></textarea></td>
-            <td class="tdtext"><textarea id="English" oninput=TranslatetoEnglish() size="4" wrap="hard" draggable="false" placeholder="Enter English text here"></textarea></span></td>
-        </tr>
-    </table>
-
-
-
-    <table align="center" class="center Marcellus" style="margin-top: 5%;">
-        <tr style="font-size: 110%;">
-            <th colspan="5" width="50%"><span>Unseen Alphabet</span></th>
-        </tr>
-        <tr>
-            <td class="centertext"><b>A</b> = ㅏ</td>
-            <td class="centertext"><b>B</b> = Б/б</td>
-            <td class="centertext"><b>C</b> = C/𑀘</td>
-            <td class="centertext"><b>D</b> = Δ</td>
-            <td class="centertext"><b>E</b> = Э</td>
-        </tr>
-        <tr>
-            <td class="centertext"><b>F</b> = Ф</td>
-            <td class="centertext"><b>G</b> = Γ</td>
-            <td class="centertext"><b>H</b> = ㅎ</td>
-            <td class="centertext"><b>I</b> = И</td>
-            <td class="centertext"><b>J</b> = 𑀛 / ㅈ</td>
-        </tr>
-        <tr>
-            <td class="centertext"><b>K</b> = ㅋ</td>
-            <td class="centertext"><b>L</b> = Λ</td>
-            <td class="centertext"><b>M</b> = ㅁ</td>
-            <td class="centertext"><b>N</b> = N/𑀦</td>
-            <td class="centertext"><b>O</b> = Ω</td>
-        </tr>
-        <tr>
-            <td class="centertext"><b>P</b> = Π</td>
-            <td class="centertext"><b>Q</b> = Q</td>
-            <td class="centertext"><b>R</b> = ㄹ</td>
-            <td class="centertext"><b>S</b> = Σ</td>
-            <td class="centertext"><b>T</b> = T</td>
-        </tr>
-        <tr>
-            <td class="centertext"><b>U</b> = U</td>
-            <td class="centertext"><b>V</b> = V/𑀯</td>
-            <td class="centertext"><b>W</b> = W</td>
-            <td class="centertext"><b>X</b> = X</td>
-            <td class="centertext"><b>Y</b> = Y</td>
-        </tr>
-        <tr>
-            <td class="centertext"><b>Z</b> = З</td>
-        </tr>
-
-  </table>
-
-
-
-
-    <script>
-        function MouseOver() {
-            document.getElementById("myImg").src = "images/Dauntless-logo.gif";
-        }
-
-        function MouseOut() {
-            document.getElementById("myImg").src = "images/Dauntless Logo.png";
-        }  
-    </script>
+    </div>
 
 </body>
 </html>

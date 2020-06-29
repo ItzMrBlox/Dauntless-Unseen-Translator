@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dauntless Unseen Mystery</title>
+
+    <link rel="icon" href="assets\images\unseen-logo.png">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="scripts\translate.js"></script>
+    <script src="scripts\MY5T3RY.js"></script>
+    <script src="scripts\misc.js"></script>
+</head>
+
+<body>
+    <a href="index.html">
+        <div id="home" class="HomeReturn">
+            <center><img id="myImg" name="Why am I flashing?" src="assets\images\Dauntless Logo.png" width="2%" height="2%" onmouseover="MouseOver()" onmouseout="MouseOut()"><img src="assets\images\dauntless-logo-horizontal-white.png" width="12%" height="12%" style="padding-left: 5px;"></center>
+        </div>
+    </a>
+
+<!-- Translation Boxes -->
+    <table width="50%">
+        <tr style="font-size: 150%;">
+            <th width="386" style="border-right:none;"><span>Unseen</span></th>
+            <th rowspan="2" width="1%" style="border: none;"></th>
+            <th width="386" style="border-left:none;"><span>English</span></th>
+        </tr>
+        <tr>
+            <td class="tdtext"><textarea id="Unseen" oninput=TranslatetoUnseen() size="4" wrap="hard" draggable="false" placeholder="Enter Unseen text here"></textarea></td>
+            <td class="tdtext"><textarea id="English" oninput=TranslatetoEnglish() size="4" wrap="hard" draggable="false" placeholder="Enter English text here"></textarea></span></td>
+        </tr>
+    </table>
+
+</body>
+</html>
