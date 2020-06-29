@@ -1,0 +1,99 @@
+/* Elements */
+html{
+    background-image: url(/assets/images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Marcellus";
+    src: url(https://fonts.googleapis.com/css?family=Marcellus);
+  }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: auto;
+    margin-top: 0%;
+    font-family: "Marcellus";
+}
+
+th {
+    background-color: #34a6ed;
+}
+
+input {
+    overflow-wrap: break-word;
+    height: 100%;
+    width: 99.1%;
+    font-size: 20px;
+}   
+
+textarea {
+    overflow: auto;
+    width: 99.1%;
+    height: 99%;
+    border: none;
+    resize: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+table span {
+    color: #00ddff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+td {
+    opacity: 0.94;
+    background-color: white;
+}
+
+
+
+/* Classes  */
+.mainbox {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.850);
+    
+    width: 75rem;
+    height: 10rem;
+
+    font-family: "Marcellus";
+    font-size: 200%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.tdtext {
+    height: 15vw;   
+}
+
+.HomeReturn {
+    cursor: pointer;
+    width: 100%;
+    height: 5%;
+    padding-bottom: 1vw;
+    position: relative;
+}
+
+.mainbox-subbox {
+    font-size: 90%;
+
+    width: 40rem;
+    height: auto;
+    background-color: rgba(197, 197, 197, 0.95);
+    color: white;
+    display: inline-block
+}
+
+.mainbox-subbox:hover {
+    background-color: rgba(255, 255, 255, 0.950);
+    color: black;
+    cursor: pointer;
+}
