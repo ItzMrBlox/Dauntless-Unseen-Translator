@@ -13,32 +13,23 @@
 </head>
 
 <body>
-    <a href="index">
+    <a href="index.html">
         <div id="home" class="HomeReturn">
             <img id="myImg" name="Why am I flashing?" src="assets\images\Dauntless Logo.png" onmouseover="MouseOver()" onmouseout="MouseOut()"><img src="assets\images\dauntless-logo-horizontal-white.png"">
         </div>
     </a>
 
 <!-- Translation Boxes -->
-    <table width="50%">
-        <tr style="font-size: 150%;">
-            <th width="386" style="border-right:none;"><span>Unseen</span></th>
-            <th rowspan="2" width="1%" style="border: none;"></th>
-            <th width="386" style="border-left:none;"><span>English</span></th>
-        </tr>
-        <tr>
-            <td class="tdtext"><textarea id="Unseen" oninput=TranslatetoUnseen() size="4" wrap="hard" draggable="false" placeholder="Enter Unseen text here"></textarea></td>
-            <td class="tdtext"><textarea id="English" oninput=TranslatetoEnglish() size="4" wrap="hard" draggable="false" placeholder="Enter English text here"></textarea></span></td>
-        </tr>
-    </table>
+    <div class="mainflex-container">
+        <div style="background-color: #00b4cf; width: 600px;border-radius: 50px;box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 255, .1);">
+            <p class="Text">Unseen</p>
+            <textarea id="Unseen" oninput=TranslatetoUnseen() size="4" wrap="hard" draggable="false" placeholder="Enter Unseen text here"></textarea>
+        </div>
+        <div style="background-color: #00b4cf; width: 600px;border-radius: 50px;box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 255, .1);">
+            <p class="Text">English</p>
+            <textarea id="English" oninput=TranslatetoEnglish() size="4" wrap="hard" draggable="false" placeholder="Enter English text here"></textarea>
+        </div>
+    </div>
 
-    <table class="center Marcellus" style="margin-top: 5%;color:white;" width="20%">
-        <tr style="font-size: 140%;">
-            <th><span>Unseen Alphabet</span></th>
-        </tr>
-        <tr>
-            <td><a href="assets\letter.txt" download><center><button>Download Alphabet</button></center></a></td>
-        </tr>
-    </table>
 </body>
 </html>
