@@ -221,7 +221,7 @@ h3:not(.noIncrement)::before {
 }
 
 .Text {
-    color: #00ddff;
+    color: white;
     font-size: 40px;
     margin-top: 5px;
     height:10px;
@@ -233,8 +233,8 @@ h3:not(.noIncrement)::before {
 }
 
 .translationboxes {
-    background: rgb(68, 152, 255);
-    background: radial-gradient(circle, rgb(68, 152, 255) 26%, rgba(149,187,233,1) 100%, rgba(148,187,233,1) 100%);
+    background: rgb(75,0,105);
+    background: radial-gradient(circle, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 100%);
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
     border-radius: 3px;
 }
