@@ -4,6 +4,8 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    counter-reset: candle;
+    counter-increment: candle 3;
 }
 
 @font-face {
@@ -12,13 +14,14 @@ html{
 }
 
 @font-face {
-    font-family: "Marcellus SC";
-    src: url(https://fonts.googleapis.com/css2?family=Marcellus+SC);
+    font-family: 'Marcellus SC';
+    src: url(https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap);
+    
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(https://fonts.googleapis.com/css2?family=Roboto);
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
 }
 
 
@@ -147,7 +150,7 @@ hr {
     vertical-align: middle;
 }
 
-.scrolldiv {
+.longdiv {
     word-wrap: break-word;
     background: white;
     display: block;
@@ -158,47 +161,55 @@ hr {
     height: auto;
 
     margin-left: 15%;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.scrolldiv p {
+.longdiv p {
     padding-left: 1%;
     padding-right: 1%;
 }
 
-.scrolldiv blockquote {
+.longdiv blockquote {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.scrolldiv img {
+.longdiv img {
     display:block;
     margin:auto;
 }
 
-.scrolldiv .candle {
+.longdiv .candle {
     width: 600px;
 }
 
-.scrolldiv audio {
+.longdiv audio {
     display: block;
     margin: auto;
     width: 50%;
 }´
 
-.scrolldiv section:not(p blockquote img b){
+.longdiv section:not(p blockquote img b){
     font-size: 20px;
     font-weight: 800;
     font-family: "Marcellus SC";
     text-align: center;
 }
-.scrolldiv h3 {
+.longdiv h3 {
     font-family: "Marcellus";
     text-align: center;
     font-size: 30px;
     font-weight: 800;
+    
 }
 
-.scrolldiv iframe {
+h3:not(.noIncrement)::before {
+        counter-increment: candle;
+        content: counter(candle) "th Candle "; 
+}
+
+.longdiv iframe {
     margin: 0 auto;
     display: block;
 }
@@ -214,16 +225,18 @@ hr {
     font-size: 40px;
     margin-top: 5px;
     height:10px;
-    font-family: "Marcellus SC";
+    font-family: 'Marcellus SC', serif;
     -webkit-text-stroke-width: 1px;
     line-height: 1.2;
     letter-spacing: 1.2px;
+
 }
 
 .translationboxes {
-    background-color: #707070; 
-    width: 600px;
+    background: rgb(68, 152, 255);
+    background: radial-gradient(circle, rgb(68, 152, 255) 26%, rgba(149,187,233,1) 100%, rgba(148,187,233,1) 100%);
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: 3px;
 }
 
 .contentbox {
