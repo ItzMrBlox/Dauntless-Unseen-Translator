@@ -204,7 +204,7 @@ hr {
     
 }
 
-h3:not(.noIncrement)::before {
+h3.Increment::before {
         counter-increment: candle;
         content: counter(candle) "th Candle "; 
 }
@@ -212,6 +212,10 @@ h3:not(.noIncrement)::before {
 .longdiv iframe {
     margin: 0 auto;
     display: block;
+}
+
+.longdiv section:last-child {
+    padding-bottom: 1000px;
 }
 
 .title {
@@ -253,6 +257,7 @@ h3:not(.noIncrement)::before {
     text-align: center;
     font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
 }
 
 .contentbox a {
