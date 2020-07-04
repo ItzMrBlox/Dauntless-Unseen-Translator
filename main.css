@@ -201,10 +201,9 @@ hr {
     text-align: center;
     font-size: 30px;
     font-weight: 800;
-    
 }
 
-h3.Increment::before {
+.candlenumbers h3:empty::before {
         counter-increment: candle;
         content: counter(candle) "th Candle "; 
 }
