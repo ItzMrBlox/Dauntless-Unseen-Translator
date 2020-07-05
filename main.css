@@ -301,8 +301,7 @@ hr {
         background-position: 30%; 
     }
 
-    .mainbox-subbox p {
-        line-height: 1;
+    .mainbox-subbox p:first-child {
         font-size: 8vw;
     }
 
