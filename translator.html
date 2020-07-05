@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The No. 1 Dauntless Unseen Source!">
+    <meta name="keywords" content="Dauntless, Unseen, Dauntless Unseen, Translator, Unseen Translator, Dauntless Translator Unseen">
+    <meta name="author" content="Blox">
     <title>Dauntless Unseen Mystery</title>
 
     <link rel="icon" href="assets\images\unseen-logo.png">
@@ -10,18 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
 
     <script src="scripts\translate.js"></script>
-    <script src="scripts\MY5T3RY.js"></script>
+    <script src="..\scripts\misc.js"></script>
+    
 </head>
 
 <body>
-    <a href="../index.html">
-        <div id="home" class="HomeReturn">
-            <img id="myImg" name="Why am I flashing?" src="assets\images\Dauntless Logo.png" onmouseover="MouseOver()" onmouseout="MouseOut()"><img src="assets\images\dauntless-logo-horizontal-white.png"">
-        </div>
-    </a>
+    <div include-html="..\assets\include\include.html"></div>
 
 <!-- Translation Boxes -->
-    <div class="mainflex-container">
+    <div class="translateflex-container">
         <div class="translationboxes">
             <p class="Text">Unseen</p>
             <textarea id="Unseen" oninput=TranslatetoUnseen() size="4" wrap="hard" draggable="false" placeholder="Enter Unseen text here"></textarea>
@@ -31,6 +31,9 @@
             <textarea id="English" oninput=TranslatetoEnglish() size="4" wrap="hard" draggable="false" placeholder="Enter English text here"></textarea>
         </div>
     </div>
-
+    
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
