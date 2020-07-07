@@ -104,7 +104,7 @@ hr {
 
     background: url(/assets/images/background.png) fixed;
     background-size: cover;
-    filter: grayscale(100%);
+    filter: grayscale(90%);
 
     cursor: pointer;
     border-radius: 7px;
@@ -118,7 +118,10 @@ hr {
 	text-shadow: -1px 1px 2px #000,
 				  2px 2px 2px #000,
 				  2px -2px 0 #000,
-				  -2px -2px 0 #000;
+                  -2px -2px 0 #000;
+    
+/* Transition on hover */
+    transition: 0.5s;
     
 }
 
@@ -283,11 +286,10 @@ hr {
 }
 
 
-
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
     html {
-        background-position: 30%; 
+        background-position: 15%; 
       }
     
     .mainbox {
