@@ -30,6 +30,7 @@ textarea {
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
     filter: none;
+    z-index: auto;
 }
 
 hr {
@@ -155,7 +156,7 @@ hr {
 
 .translateflex-container div {
     width: 500px;
-    height: 150px;
+    height: 211px;
     margin: 10px;
     text-align: center;
     font-size: 30px;
@@ -240,7 +241,7 @@ hr {
     padding-bottom: 2vh;
 }
 
-.translationboxes {
+.translationboxes:not(textarea){
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
     border-radius: 3px;
     border: 1px solid white;
@@ -258,6 +259,11 @@ hr {
     line-height: 1.2;
     letter-spacing: 1.2px;
     filter:none;
+}
+
+.translationboxes div {
+    width: auto;
+    height: auto;
 }
 
 .translationboxes textarea {
