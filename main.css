@@ -384,6 +384,7 @@ hr {
 
     .longdiv img {
         width: 50%;
+        height: 50%;
     }
 
     .longdiv p, blockquote {
