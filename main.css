@@ -303,6 +303,19 @@ hr {
     color: white;
 }
 
+.flextop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flextop div {
+    padding: 20px 50px;
+    width:auto;
+}
+
+
+
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
     html {
@@ -321,7 +334,7 @@ hr {
         line-height: 1;
         background: radial-gradient(circle, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 100%);
         background-position: 30%; 
-        font-size: 8vw;
+        font-size: 7.5vw;
     }
 
     .mainflex-container {
