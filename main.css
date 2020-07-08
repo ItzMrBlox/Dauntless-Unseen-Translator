@@ -24,15 +24,16 @@ input {
 textarea {
     overflow: auto;
     width: 100%;
-    height: 65%;
+    height: 63%;
     border: none;
-    border-radius: 3px;
+    border-radius: 1px;
     resize: none;
     font-size: 18px;
     overflow-y: hidden;
     outline: none;
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
+    filter: none;
 }
 
 hr {
@@ -41,6 +42,7 @@ hr {
     margin-bottom: 75px;
     width: 95%;
 }
+
 
 
 
@@ -54,7 +56,6 @@ hr {
     position: relative;
     text-align: center;
     vertical-align:middle;
-    text-decoration: none;
 }
 
 .HomeReturn img {
@@ -62,7 +63,7 @@ hr {
     width: 3.5%;
 }
 
-.HomeReturn img:first-child{
+.HomeReturn img:first-child {
     padding-top: 20px;
 }
 
@@ -156,7 +157,7 @@ hr {
     justify-content: center;
 }
 
-.translateflex-container div{
+.translateflex-container div {
     width: 500px;
     height: 150px;
     margin: 10px;
@@ -207,7 +208,7 @@ hr {
     width: 50%;
 }
 
-.longdiv section:not(p blockquote img b){
+.longdiv section:not(p blockquote img b) {
     font-size: 20px;
     font-weight: 800;
     font-family: "Marcellus SC";
@@ -282,6 +283,10 @@ hr {
     padding-left: 1%;
     text-decoration: none;
     color: rgb(0, 157, 255);
+    transition: 0.3s;
+}
+.contentbox a:hover {
+    color: rgb(0, 71, 116);
 }
 
 .contentbox li {
@@ -304,6 +309,11 @@ hr {
 .footers a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+.footers a:hover {
+    color: rgb(42, 177, 255);
 }
 
 .flextop {
