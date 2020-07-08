@@ -8,11 +8,7 @@ html{
     counter-increment: candle 3;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Roboto&display=swap');
 
 input {
     overflow-wrap: break-word;
@@ -241,25 +237,28 @@ hr {
     font-family: 'Marcellus', serif;
 }
 
-.Text {
-    color: white;
-    font-size: 40px;
-    margin-top: 5px;
-    height:10px;
-    font-family: 'Marcellus SC', serif;
-    -webkit-text-stroke-width: 1px;
-    line-height: 1.2;
-    letter-spacing: 1.2px;
-
-}
-
 .translationboxes {
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
     border-radius: 3px;
     border: 1px solid white;
     background: url(/assets/images/background.png) fixed;
     background-size: cover;
-    filter: hue-rotate(90deg);
+}
+
+.translationboxes p {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    height:10px;
+    font-family: 'Marcellus', serif;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    filter:none;
+}
+
+.translationboxes textarea {
+    filter: none;
 }
 
 .contentbox {
