@@ -232,6 +232,18 @@ hr {
     padding-bottom: 1000px;
 }
 
+.longdiv .date {
+    text-align: right;
+    padding-right: 5%;
+    padding-top: 1%;
+    position: relative;
+}
+
+.date::before {
+    content: "Last Updated: ";
+    font-weight: 600;
+}
+
 .longdiv h1 {
     font-size: 40px;
     font-weight: 800;
