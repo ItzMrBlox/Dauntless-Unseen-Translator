@@ -1,6 +1,10 @@
 /* Elements */
+:root {
+    --main-background-image: url(../assets/images/background.png);
+}
+
 html{
-    background-image: url(/assets/images/background.png);
+    background-image: var(--main-background-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -101,7 +105,7 @@ hr {
     display: table;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 
-    background: url(/assets/images/background.png) fixed;
+    background: var(--main-background-image) fixed;
     background-size: cover;
     filter: grayscale(90%);
 
@@ -258,7 +262,7 @@ hr {
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
     border-radius: 3px;
     border: 1px solid white;
-    background: url(/assets/images/background.png) fixed;
+    background: var(--main-background-image) fixed;
     background-size: cover;
 }
 
