@@ -308,7 +308,7 @@ hr {
 .contentbox a {
     padding-left: 0.5%;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 161, 201);
     transition: 0.3s;
 }
 .contentbox a:hover {
