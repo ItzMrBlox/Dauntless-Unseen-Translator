@@ -237,6 +237,7 @@ hr {
     padding-right: 5%;
     padding-top: 1%;
     position: relative;
+    margin-bottom: -5vh;
 }
 
 .date::before {
