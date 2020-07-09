@@ -2,26 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
       <loc>https://dauntless-unseen.com</loc>
-      <lastmod>2005-01-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1</priority>
 </url>
 <url>
       <loc>https://dauntless-unseen.com/utility/translator.html</loc>
-      <lastmod>2005-01-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>.5</priority>
 </url>
 <url>
       <loc>https://dauntless-unseen.com/ARGS/DarkHarvest2018.html</loc>
-      <lastmod>2005-01-01</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>yearly</changefreq>
       <priority>.5</priority>
 </url>
 <url>
       <loc>https://dauntless-unseen.com/ARGS/DarkHarvest2019.html</loc>
-      <lastmod>2005-01-01</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>yearly</changefreq>
       <priority>.5</priority>
 </url>
 </urlset>
