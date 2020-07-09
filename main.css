@@ -481,4 +481,13 @@ hr {
     .footers {
         display: none;
     }
+
+    .longdiv .date {
+        text-align: center;
+    }
+
+    .creditsflex {
+        flex-direction: column;
+        text-align: center;
+    }
 }
