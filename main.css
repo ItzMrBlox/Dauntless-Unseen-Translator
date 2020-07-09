@@ -1,6 +1,7 @@
 /* Elements */
 :root {
     --main-background-image: url(../assets/images/background.png);
+    --link-color-hover: purple;
 }
 
 html{
@@ -305,13 +306,13 @@ hr {
 }
 
 .contentbox a {
-    padding-left: 1%;
+    padding-left: 0.5%;
     text-decoration: none;
-    color: rgb(0, 157, 255);
+    color: black;
     transition: 0.3s;
 }
 .contentbox a:hover {
-    color: rgb(0, 71, 116);
+    color: var(--link-color-hover);
 }
 
 .contentbox li {
@@ -338,7 +339,7 @@ hr {
 }
 
 .footers a:hover {
-    color: rgb(42, 177, 255);
+    color: var(--link-color-hover);
 }
 
 .flextop {
@@ -360,6 +361,7 @@ hr {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius: 10px;
     padding-bottom: 3vh;
+    font-size: 20px;
 }
 
 .credits h1 {
@@ -370,12 +372,12 @@ hr {
 
 .credits a {
     text-decoration: none;
-    color: rgb(146, 146, 255);
+    color: black;
     transition: 0.3s;
 }
 
 .credits a:hover {
-    color: blue;
+    color: var(--link-color-hover);
 }
 
 .creditsflex {
@@ -389,6 +391,8 @@ hr {
 
 .creditsflex div {
     padding: 2px 1.3vw;
+    width: 15%;
+    text-align: center;
 }
 
 
@@ -411,6 +415,7 @@ hr {
         line-height: 1;
         background: radial-gradient(circle, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 100%);
         background-position: 30%; 
+        filter: grayscale(0%);
         font-size: 7.5vw;
     }
 
