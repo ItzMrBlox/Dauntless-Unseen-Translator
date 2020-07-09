@@ -1,4 +1,4 @@
-# Unseen-Translator
+# Dauntless Unseen Source
 <img src="/assets/images/favicon.png" width="150px" align ="right">
 
 The No. 1 Source for Unseen Information
