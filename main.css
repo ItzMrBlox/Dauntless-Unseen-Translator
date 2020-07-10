@@ -500,4 +500,8 @@ hr {
         flex-direction: column;
         text-align: center;
     }
+
+    .creditsflex div {
+        width: 100%;
+    }
 }
