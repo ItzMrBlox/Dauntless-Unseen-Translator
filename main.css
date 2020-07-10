@@ -110,7 +110,7 @@ hr {
 
     background: var(--main-background-image) fixed;
     background-size: cover;
-    filter: grayscale(90%);
+    filter: grayscale(90%) drop-shadow(2px 4px 6px black);
 
     cursor: pointer;
     border-radius: 7px;
