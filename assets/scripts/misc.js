@@ -26,16 +26,10 @@ function includeHTML() {
     }
 };
 
-function MouseOver() {
-    document.getElementById("myImg").src = "../assets/images/Dauntless-logo.gif";
-}
 
-function MouseOut() {
-    document.getElementById("myImg").src = "../assets/images/Dauntless Logo.png";
-}
-
-const ARG2018 = localStorage.getItem('2018');
-const ARG2019 = localStorage.getItem('2019')
+// Local Storage
+var ARG2018 = localStorage.getItem('2018');
+var ARG2019 = localStorage.getItem('2019')
 
 function NewInformation() {
   if(ARG2018 == "true"){
@@ -53,4 +47,14 @@ function Visited2018() {
 
 function Visited2019() {
     localStorage.setItem("2019", "true");
+}
+
+
+//sa421343r54235 23b523  523 g5235e<btrewteT 345t345 
+function MouseOver() {
+    document.getElementById("myImg").src = "../assets/images/Dauntless-logo.gif";
+}
+
+function MouseOut() {
+    document.getElementById("myImg").src = "../assets/images/Dauntless Logo.png";
 }
