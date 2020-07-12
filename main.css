@@ -265,7 +265,7 @@ hr {
     box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
     border-radius: 3px;
     border: 1px solid white;
-    background: var(--main-background-image) fixed;
+    background: linear-gradient(180deg, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 38%, rgba(184,0,255,1) 58%, rgba(75,0,105,1) 100%);
     background-size: cover;
 }
 
