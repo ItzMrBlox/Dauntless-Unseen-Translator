@@ -33,3 +33,24 @@ function MouseOver() {
 function MouseOut() {
     document.getElementById("myImg").src = "../assets/images/Dauntless Logo.png";
 }
+
+const ARG2018 = localStorage.getItem('2018');
+const ARG2019 = localStorage.getItem('2019')
+
+function NewInformation() {
+  if(ARG2018 == "true"){
+    document.getElementById("2018").style.display = "none";
+  }
+  if(ARG2019 == "true"){
+    document.getElementById("2019").style.display = "none";
+  }
+}
+  
+
+function Visited2018() {
+    localStorage.setItem("2018", "true");
+}
+
+function Visited2019() {
+    localStorage.setItem("2019", "true");
+}

@@ -11,7 +11,7 @@
         <script src="https://kit.fontawesome.com/566832d0e6.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body onload="NewInformation()">
     <div include-html="..\assets\include\header.html"></div>
 
     <div class="mainbox">
@@ -26,13 +26,15 @@
         <br><br>
             
         <div class="mainflex-container" >
-            <a href="../ARGS/DarkHarvest2018">
+            <a href="../ARGS/DarkHarvest2018" onclick="Visited2018()">
                 <div class="mainbox-subbox">
-                        <p class="argtitle">Dark Harvest 2018</p>
+                    <i class="fas fa-exclamation-circle updated" id="2018"></i>
+                    <p class="argtitle">Dark Harvest 2018</p>
                 </div>
             </a>
-            <a href="../ARGS/DarkHarvest2019">
+            <a href="../ARGS/DarkHarvest2019" onclick="Visited2019()">
                 <div class="mainbox-subbox">
+                    <i class="fas fa-exclamation-circle updated" id="2019"></i>
                     <p class="argtitle">Dark Harvest 2019</p>
                 </div>
             </a>

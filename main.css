@@ -397,6 +397,12 @@ hr {
     text-align: center;
 }
 
+.updated {
+    position: absolute;
+    top: -5%;
+    left: -2.5%;
+}
+
 
 
 /* Mobile CSS */
@@ -505,5 +511,10 @@ hr {
 
     .creditsflex div {
         width: 100%;
+    }
+
+    .updated {
+    font-size: 5vw;
+    display: block;
     }
 }
