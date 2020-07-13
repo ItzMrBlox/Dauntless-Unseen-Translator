@@ -39,7 +39,6 @@ function NewInformation() {
     document.getElementById("2019").style.display = "none";
   }
 }
-  
 
 function Visited2018() {
     localStorage.setItem("2018", "true");
