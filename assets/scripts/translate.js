@@ -126,7 +126,7 @@ function TranslatetoEnglish(){
         TranslationEng = TranslationEng.replace(/z/g, "З"); // if z then З
     
     
-        TranslationEng = TranslationEng.replace(/\s\s+/g, '  '); // Adds 1 more space
+        TranslationEng = TranslationEng.replace(/\s\s+/g, ' '); // Adds 1 more space
     
     document.getElementById("Unseen").value = TranslationEng;
     }

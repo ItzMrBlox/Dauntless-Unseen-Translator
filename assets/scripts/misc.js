@@ -32,20 +32,20 @@ var ARG2018 = localStorage.getItem('2018');
 var ARG2019 = localStorage.getItem('2019')
 
 function NewInformation() {
-  if(ARG2018 == "true"){
+  if(ARG2018 == "20/07/2020"){
     document.getElementById("2018").style.display = "none";
   }
-  if(ARG2019 == "true"){
+  if(ARG2019 == "20/07/2020"){
     document.getElementById("2019").style.display = "none";
   }
 }
 
 function Visited2018() {
-    localStorage.setItem("2018", "true");
+    localStorage.setItem("2018", "20/07/2020");
 }
 
 function Visited2019() {
-    localStorage.setItem("2019", "true");
+    localStorage.setItem("2019", "20/07/2020");
 }
 
 
