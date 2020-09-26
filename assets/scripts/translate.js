@@ -2,6 +2,10 @@ function TranslatetoUnseen(){
         
     var Translation = document.getElementById("Unseen").value; 
 
+   
+       var UnseenLanguage = ["ㅏ", "Б", "б", "C", "𑀘", "Δ", "Э", "Ф", "Γ", "ㅎ", "И", "𑀛", "ㅈ", "ㅋ", "Λ", "ㅁ", "N", "𑀦", "Ω", "Π", "Q", "ㄹ", "Σ", "T", "U", "𑀯", "З"]
+       var EnglisLanguage = ["A", "B", "B", "C", "C", "D", "E", "F", "G", "H", "I", "J", "J", "K", "L", "M", "N", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "Z"]
+
 
     Translation = Translation.replace(/ㅏ/g, "A"); // if ㅏ then A
 
