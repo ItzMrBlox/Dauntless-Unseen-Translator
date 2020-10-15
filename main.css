@@ -237,7 +237,7 @@ hr {
 }
 
 .longdiv section:last-child {
-    padding-bottom: 1000px;
+    padding-bottom: 10px;
 }
 
 .longdiv .date {
