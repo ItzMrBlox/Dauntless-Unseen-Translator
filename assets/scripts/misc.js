@@ -39,7 +39,7 @@ function NewInformation() {
   if(ARG2019 == "20/07/2020"){
     document.getElementById("2019").style.display = "none";
   }
-  if(ARG2019 == "20/07/2020"){
+  if(ARG2020 == "16/10/2020"){
     document.getElementById("2020").style.display = "none";
   }
 }
