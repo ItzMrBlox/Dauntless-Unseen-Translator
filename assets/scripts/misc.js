@@ -40,7 +40,7 @@ function NewInformation() {
     document.getElementById("2019").style.display = "none";
   }
   if(ARG2019 == "20/07/2020"){
-    document.getElementById("2019").style.display = "none";
+    document.getElementById("2020").style.display = "none";
   }
 }
 
@@ -53,7 +53,7 @@ function Visited2019() {
 }
 
 function Visited2020() {
-  localStorage.setItem("2019", "16/10/2020");
+  localStorage.setItem("2020", "16/10/2020");
 }
 
 
