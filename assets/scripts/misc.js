@@ -27,36 +27,6 @@ function includeHTML() {
 };
 
 
-// Local Storage
-var ARG2018 = localStorage.getItem('2018');
-var ARG2019 = localStorage.getItem('2019')
-var ARG2020 = localStorage.getItem('2020')
-
-function NewInformation() {
-  if(ARG2018 == "20/07/2020"){
-    document.getElementById("2018").style.display = "none";
-  }
-  if(ARG2019 == "20/07/2020"){
-    document.getElementById("2019").style.display = "none";
-  }
-  if(ARG2020 == "16/10/2020"){
-    document.getElementById("2020").style.display = "none";
-  }
-}
-
-function Visited2018() {
-    localStorage.setItem("2018", "20/07/2020");
-}
-
-function Visited2019() {
-    localStorage.setItem("2019", "20/07/2020");
-}
-
-function Visited2020() {
-  localStorage.setItem("2020", "16/10/2020");
-}
-
-
 //sa421343r54235 23b523  523 g5235e<btrewteT 345t345 
 function MouseOver() {
     document.getElementById("myImg").src = "../assets/images/Dauntless-logo.gif";
