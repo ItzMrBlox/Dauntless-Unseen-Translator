@@ -19,6 +19,7 @@ if (localStorage.getItem("ARG") === null) {
 }
 
 window.addEventListener('load', (event) => {
+    Updated();
     if (VisitedARGs[2018] == v2018) {
         document.getElementById("2018").style.display = "none";
     }
@@ -43,4 +44,12 @@ function Visited2019() {
 function Visited2020() {
     VisitedARGs[2020] = v2020
     localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
+}
+
+function Updated() {
+    var dateArray = [v2018, v2019, v2020]
+    var updateMarkers = document.getElementsByClassName("updated");
+    for (let i = 0; i < updateMarkers.length; i++) {
+        updateMarkers[i].title = dateArray[i];
+    }
 }
