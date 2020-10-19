@@ -191,11 +191,14 @@ hr {
 .longdiv p {
     padding-left: 1vw;
     padding-right: 1vw;
+    line-height: 30px;
 }
 
 .longdiv blockquote {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    border-left: 4px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
 }
 
 .longdiv img {
@@ -226,6 +229,10 @@ hr {
     font-weight: 800;
 }
 
+.longdiv h3 {
+    text-align: center;
+}
+
 .candlenumbers h2:empty::before {
         counter-increment: candle;
         content: counter(candle) "th Candle "; 
@@ -234,6 +241,21 @@ hr {
 .longdiv iframe {
     margin: 0 auto;
     display: block;
+}
+
+.longdiv p.quote {
+    margin: 0 auto;
+    width: 90% !important; 
+    font-style: italic;
+    padding: 1vh;
+}
+
+.longdiv p.quote:before {
+    content: '"';
+}
+
+.longdiv p.quote:after {
+    content: '"';
 }
 
 .longdiv section:last-child {
@@ -307,6 +329,10 @@ hr {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+
+.contentbox p.smallTitle{
+    font-size: 15px;
 }
 
 .contentbox a {
