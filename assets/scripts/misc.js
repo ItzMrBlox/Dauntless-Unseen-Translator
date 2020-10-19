@@ -25,3 +25,10 @@ function includeHTML() {
     }
   }
 };
+
+document.getElementById("logo").addEventListener('mouseover', function () {
+  document.getElementById("logo").src = "../assets/images/Dauntless-logo.gif";
+  this.addEventListener('mouseout', function () {
+      document.getElementById("logo").src = "../assets/images/Dauntless Logo.png";
+  })
+});
