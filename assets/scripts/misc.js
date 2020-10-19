@@ -25,12 +25,3 @@ function includeHTML() {
     }
   }
 };
-
-
-//sa421343r54235 23b523  523 g5235e<btrewteT 345t345 
-document.getElementById("logo").addEventListener('mouseover', function () {
-  document.getElementById("logo").src = "../assets/images/Dauntless-logo.gif";
-  this.addEventListener('mouseout', function(){
-    document.getElementById("logo").src = "../assets/images/Dauntless Logo.png";
-  })
-});
