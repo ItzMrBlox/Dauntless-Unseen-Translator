@@ -441,7 +441,7 @@ hr {
     
     .mainbox {
         width: 100%;
-        height: 85vh;
+        height: auto;
     }
 
     .mainbox-subbox {
@@ -449,8 +449,8 @@ hr {
         padding: 0;
         margin: 2%;
         line-height: 1;
-        background: radial-gradient(circle, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 100%);
-        background-position: 30%; 
+        background: var(--main-background-image) fixed;
+        background-size: cover;
         filter: grayscale(0%);
         font-size: 7.5vw;
     }
