@@ -1,7 +1,7 @@
 //Date edited
 const v2018 = "19/10/2020"
 const v2019 = "20/07/2020"
-const v2020 = "16/10/2020"
+const v2020 = "20/10/2020"
 
 // Json Object in Local storage
 if (localStorage.getItem("ARG") === null) {
