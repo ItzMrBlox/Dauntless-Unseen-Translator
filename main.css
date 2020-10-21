@@ -51,6 +51,8 @@ hr {
 
 
 /* Classes  */
+
+/* Home Button */
 .HomeReturn {
     padding-top: 1vw;
     cursor: pointer;
@@ -78,6 +80,8 @@ hr {
     position: relative;
     top: -0.7rem;
 }
+
+/* Main area on front page */
 
 .mainbox {
     margin: auto;
@@ -157,22 +161,14 @@ hr {
     font-size: 2vw;
 }
 
-.translateflex-container {
-    display: flex;
-    justify-content: center;
+.updated {
+    position: absolute;
+    top: -5%;
+    left: -2.5%;
 }
 
-.translateflex-container div {
-    width: 500px;
-    height: 250px;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 2.5;
-    display: inline-block;
-    vertical-align: middle;
-}
 
+/* ARGS */
 .longdiv {
     word-wrap: break-word;
     background: white;
@@ -284,36 +280,6 @@ hr {
     padding-bottom: 2vh;
 }
 
-.translationboxes:not(textarea){
-    box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
-    border-radius: 3px;
-    border: 1px solid white;
-    background: linear-gradient(180deg, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 38%, rgba(184,0,255,1) 58%, rgba(75,0,105,1) 100%);
-    background-size: cover;
-}
-
-.translationboxes p {
-    color: white;
-    font-size: 40px;
-    margin-top: 5px;
-    height:10px;
-    font-family: 'Marcellus', serif;
-    -webkit-text-stroke-width: 1px;
-    line-height: 1.2;
-    letter-spacing: 1.2px;
-    filter:none;
-    padding: 4px 0px;
-}
-
-.translationboxes div {
-    width: auto;
-    height: auto;
-}
-
-.translationboxes textarea {
-    filter: none;
-}
-
 .contentbox {
     background-color: white;
     width: 17vw;
@@ -347,40 +313,6 @@ hr {
 
 .contentbox li {
     padding-bottom: 5%;
-}
-
-.footers {
-    width: 40vw;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 30vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-
-    color: white;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif !important;
-}
-
-.footers a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.footers a:hover {
-    color: var(--link-color-hover);
-}
-
-.flextop {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.flextop div {
-    padding: 1vh 5vw;
-    width: auto;
 }
 
 .credits {
@@ -425,11 +357,89 @@ hr {
     text-align: center;
 }
 
-.updated {
-    position: absolute;
-    top: -5%;
-    left: -2.5%;
+/* Translator CSS */
+
+.translateflex-container {
+    display: flex;
+    justify-content: center;
 }
+
+.translateflex-container div {
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2.5;
+    display: inline-block;
+    vertical-align: middle;
+}   
+
+.translationboxes:not(textarea){
+    box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    border: 1px solid white;
+    background: linear-gradient(180deg, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 38%, rgba(184,0,255,1) 58%, rgba(75,0,105,1) 100%);
+    background-size: cover;
+}
+
+.translationboxes p {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    height:10px;
+    font-family: 'Marcellus', serif;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    filter:none;
+    padding: 4px 0px;
+}
+
+.translationboxes div {
+    width: auto;
+    height: auto;
+}
+
+.translationboxes textarea {
+    filter: none;
+}
+
+
+.footers {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.footers a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footers a:hover {
+    color: var(--link-color-hover);
+}
+
+.flextop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flextop div {
+    padding: 1vh 5vw;
+    width: auto;
+}
+
 
 
 
@@ -438,6 +448,10 @@ hr {
     html {
         background-position: 15%; 
       }
+
+    textarea {
+        height: 20vh;
+    }
     
     .mainbox {
         width: 100%;
@@ -467,19 +481,25 @@ hr {
     .argtitle {
         font-size: 6vw;
     }
-    
+
     .translateflex-container {
         display: grid;
     }
     
     .translateflex-container div {
         width: 80vw;
+        height: 79.5%;
     }
 
+    .translateflex-container div:last-child {
+        height: 58.5%;
+    }
+    
     .translateflex-container div:not(:first-child) {
         margin-top: 15vh;
     }
-
+    
+    
     .HomeReturn img {
         width: 6vmax;
     }
@@ -545,4 +565,5 @@ hr {
     font-size: 5vw;
     display: block;
     }
+
 }
