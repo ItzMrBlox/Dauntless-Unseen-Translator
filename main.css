@@ -357,6 +357,23 @@ hr {
     text-align: center;
 }
 
+/* Theory Section */
+.UnseenTheory {
+    padding-bottom: 3vh;
+}
+
+.UnseenTheory h1{
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+.UnseenTheory p {
+    color: red;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Translator CSS */
 
 .translateflex-container {
