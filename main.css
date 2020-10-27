@@ -157,6 +157,23 @@ hr {
     padding: 2vw ;
 }
 
+.flextop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2vh auto;
+}
+
+.flextop div {
+    padding: 1vh 5vw;
+    width: auto;
+}
+
+.flextop a {
+    margin: 4vh 0 2vh 0;
+}
+
+
 .argtitle {
     font-size: 2vw;
 }
@@ -424,7 +441,30 @@ hr {
     filter: none;
 }
 
+.alphabetBox {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
 
+.alphabetBox div {
+    margin: 0 auto;
+    padding: 2vh;
+    background: linear-gradient(180deg, rgba(75,0,105,1) 0%, rgba(184,0,255,1) 90%);
+    background-size: 150px;
+    color:white;
+    font-weight: 600;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+
+.alphabetBox div a {
+    color: white;
+    font-family: 'Marcellus', serif;
+}
+
+
+/* Footers */
 .footers {
     width: 40vw;
     display: flex;
@@ -447,18 +487,6 @@ hr {
 .footers a:hover {
     color: var(--link-color-hover);
 }
-
-.flextop {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.flextop div {
-    padding: 1vh 5vw;
-    width: auto;
-}
-
 
 
 
@@ -537,12 +565,12 @@ hr {
     }
 
     .longdiv img {
-        width: 50%;
+        width: 95%;
         height: 50%;
     }
 
     .longdiv p, blockquote {
-        font-size: 1.5vh;
+        font-size: 2vh;
         padding: 0 2%;
     }
     
