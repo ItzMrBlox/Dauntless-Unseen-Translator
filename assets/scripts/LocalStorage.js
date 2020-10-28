@@ -1,7 +1,7 @@
 //Date edited
 const v2018 = "19/10/2020"
 const v2019 = "20/07/2020"
-const v2020 = "28/10/2020 07:23"
+const v2020 = "28/10/2020 21:39"
 
 // Json Object in Local storage
 if (localStorage.getItem("ARG") === null) {
@@ -19,9 +19,9 @@ if (localStorage.getItem("ARG") === null) {
 }
 
 window.addEventListener('load', (event) => {
-    Updated();
     LastUpdatedDate(event)
     if (event.target.location.pathname == "/") {
+        Updated();
         if (VisitedARGs[2018] == v2018) {
             document.getElementById("2018").style.display = "none";
         }
@@ -61,17 +61,15 @@ function LastUpdatedDate(event) {
     if (event.target.location.pathname != "/") {
         var updateDate = document.getElementById("date")
         var path = event.target.location.pathname;
-        var pathSplice = path[17] + path[18] + path[19] + path[20]
+        var pathSplice = path.substring(17, 21);
         var v = eval(`v${pathSplice}`);
 
-        let n = v
-        var day = n.toString().substring(0, 2);
+        var day = v.toString().substring(0, 2);
 
-        var m = n.substring(3, 5)
+        var m = v.substring(3, 5)
         var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-        var y = v;
-        var year = y.toString().substring(6, 10)
+        var year = v.toString().substring(6, 10)
 
         updateDate.innerHTML = `${day} ${month[m - 1]}. ${year}`
     }
