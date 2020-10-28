@@ -1,7 +1,7 @@
 //Date edited
 const v2018 = "19/10/2020"
 const v2019 = "20/07/2020"
-const v2020 = "07:23 28/10/2020"
+const v2020 = "28/10/2020 07:23"
 
 // Json Object in Local storage
 if (localStorage.getItem("ARG") === null) {
@@ -20,14 +20,17 @@ if (localStorage.getItem("ARG") === null) {
 
 window.addEventListener('load', (event) => {
     Updated();
-    if (VisitedARGs[2018] == v2018) {
-        document.getElementById("2018").style.display = "none";
-    }
-    if (VisitedARGs[2019] == v2019) {
-        document.getElementById("2019").style.display = "none";
-    }
-    if (VisitedARGs[2020] == v2020) {
-        document.getElementById("2020").style.display = "none";
+    LastUpdatedDate(event)
+    if (event.target.location.pathname == "/") {
+        if (VisitedARGs[2018] == v2018) {
+            document.getElementById("2018").style.display = "none";
+        }
+        if (VisitedARGs[2019] == v2019) {
+            document.getElementById("2019").style.display = "none";
+        }
+        if (VisitedARGs[2020] == v2020) {
+            document.getElementById("2020").style.display = "none";
+        }
     }
 });
 
@@ -51,5 +54,25 @@ function Updated() {
     var updateMarkers = document.getElementsByClassName("updated");
     for (let i = 0; i < updateMarkers.length; i++) {
         updateMarkers[i].title = dateArray[i];
+    }
+}
+
+function LastUpdatedDate(event) {
+    if (event.target.location.pathname != "/") {
+        var updateDate = document.getElementById("date")
+        var path = event.target.location.pathname;
+        var pathSplice = path[17] + path[18] + path[19] + path[20]
+        var v = eval(`v${pathSplice}`);
+
+        let n = v
+        var day = n.toString().substring(0, 2);
+
+        var m = n.substring(3, 5)
+        var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+        var y = v;
+        var year = y.toString().substring(6, 10)
+
+        updateDate.innerHTML = `${day} ${month[m - 1]}. ${year}`
     }
 }
