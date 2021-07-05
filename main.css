@@ -233,7 +233,7 @@ center {
     width: 50%;
 }
 
-.longdiv section:not(p blockquote img b) {
+.longdiv section :not(p) :not(blockquote) :not(a){
     font-size: 20px;
     font-weight: 800;
     font-family: "Marcellus SC";
