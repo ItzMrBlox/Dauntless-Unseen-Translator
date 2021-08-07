@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="..\assets\scripts\jquery.min.js"></script>
-    <script> 
-        $(function(){ $("head").load("../include/headtag.html") });
-    </script>
-        <link rel="stylesheet" href="../main.css">
-        <script src="..\assets\scripts\misc.js"></script>
-        <script src="..\assets\scripts\LocalStorage.js"></script>
-        <script src="https://kit.fontawesome.com/566832d0e6.js" crossorigin="anonymous"></script>
+    <!-- General Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The No. 1 Source for Dauntless Unseen Information! Do you want to learn about the Unseen Mystery from the game Dauntless? Well this is the place for you!">
+    <meta name="keywords" content="Dauntless, Unseen, Dauntless Unseen, Translator, Unseen Translator, Dauntless Translator Unseen">
+    <meta name="author" content="Blox">
+
+
+    <!-- OpenGraph Embed (Discord and etc) -->
+    <meta content="The Dauntless Unseen Mystery" property="og:title">
+    <meta content="Do you want to learn about the Unseen Mystery from the game Dauntless? Well this is the place for you!" property="og:description">
+    <meta content="dauntless-unseen.com" property="og:site_name">
+    <meta content='https://dauntless-unseen.com/assets/images/unseen-logo-white.png' property='og:image'>
+
+
+    <!-- Misc -->
+    <meta name="google-site-verification" content="HCnvNSzuC_gDcMQybnjQSP_U4sotu2vXkgd7jEwlFUM" />
+    <title>The Dauntless Unseen Mystery</title>
+
+
+    <!-- Style -->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/png" sizes="any">
+    <link rel="stylesheet" href="../main.css">
+
+
+    <!-- Scripts -->
+    <script src="..\assets\scripts\translate.js"></script>
+    <script src="..\assets\scripts\localStorage.js"></script>
+    <script src="https://kit.fontawesome.com/566832d0e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div include-html="..\include\header.html"></div>
+    <a href="../" style="text-decoration: none;">
+        <div id="home" class="HomeReturn">
+            <img id="logo" name="Why am I flashing?" src="..\assets\images\Dauntless Logo.png" alt="Sneaky Logo">
+            <img src="..\assets\images\dauntless-logo-horizontal-white.png" alt="Logo Text">
+        </div>
+        <script>
+            document.getElementById("logo").addEventListener('mouseover', function () {
+                this.src = "../assets/images/Dauntless-logo.gif";
+                this.addEventListener('mouseout', function () {
+                    this.src = "../assets/images/Dauntless Logo.png";
+                })
+            });
+        </script>
+    </a>
 
     <div class="mainbox">
         <div class="flextop">
@@ -46,11 +80,10 @@
         <br>
     </div>
 
-    <div include-html="..\include\footer.html"></div>
-
-
-    <script>
-        includeHTML();
-    </script>
+    <div id="footers" class="footers">
+        <div><a href="https://github.com/ItzMrBlox/DauntlessUnseenTranslator"><i class="fab fa-github"></i> Github</a></div>
+        <div><a href="https://discord.gg/dauntless"><i class="fab fa-discord"></i> Discord</a></div>
+        <div><a href="https://github.com/ItzMrBlox/DauntlessUnseenTranslator/issues"><i class="fas fa-exclamation-circle"></i> Bugs / Feedback</a></div>
+    </div>
 </body>
 </html>
