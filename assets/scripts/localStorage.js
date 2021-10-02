@@ -40,20 +40,7 @@ window.addEventListener('load', (event) => {
 });
 
 function Visit(id){
-    switch (id) {
-        case "2018":
-            VisitedARGs[2018] = v2018
-            break;
-        case "2019":
-            VisitedARGs[2019] = v2019
-            break;
-        case "2020":
-            VisitedARGs[2020] = v2020
-            break;
-        case "2021":
-            VisitedARGs[2021] = v2021
-            break;
-    }
+    VisitedARGs[eval(`${id}`)] = eval(`v${id}`);
     localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
     window.location.href = `../ARGS/DarkHarvest${id}.html`
 }
