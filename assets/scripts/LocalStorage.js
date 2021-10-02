@@ -2,13 +2,15 @@
 const v2018 = "19/10/2020"
 const v2019 = "20/07/2020"
 const v2020 = "03/11/2020 19:12"
+const v2021 = "02/10/2021 22:00"
 
 // Json Object in Local storage
 if (localStorage.getItem("ARG") === null) {
     var ARGS = {
         2018: "",
         2019: "",
-        2020: ""
+        2020: "",
+        2021: ""
     };
     localStorage.setItem("ARG", JSON.stringify(ARGS));
     console.log("Created a new local storage item")
@@ -23,34 +25,41 @@ window.addEventListener('load', (event) => {
     if (event.target.location.pathname == "/") {
         Updated();
         if (VisitedARGs[2018] == v2018) {
-            document.getElementById("2018").style.display = "none";
+            document.getElementById("ARG2018").style.display = "none";
         }
         if (VisitedARGs[2019] == v2019) {
-            document.getElementById("2019").style.display = "none";
+            document.getElementById("ARG2019").style.display = "none";
         }
         if (VisitedARGs[2020] == v2020) {
-            document.getElementById("2020").style.display = "none";
+            document.getElementById("ARG2020").style.display = "none";
+        }
+        if (VisitedARGs[2021] == v2021) {
+            document.getElementById("ARG2021").style.display = "none";
         }
     }
 });
 
-function Visited2018() {
-    VisitedARGs[2018] = v2018
+function Visit(id){
+    switch (id) {
+        case "2018":
+            VisitedARGs[2018] = v2018
+            break;
+        case "2019":
+            VisitedARGs[2019] = v2019
+            break;
+        case "2020":
+            VisitedARGs[2020] = v2020
+            break;
+        case "2021":
+            VisitedARGs[2021] = v2021
+            break;
+    }
     localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
-}
-
-function Visited2019() {
-    VisitedARGs[2019] = v2019
-    localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
-}
-
-function Visited2020() {
-    VisitedARGs[2020] = v2020
-    localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
+    window.location.href = `../ARGS/DarkHarvest${id}.html`
 }
 
 function Updated() {
-    var dateArray = [v2018, v2019, v2020]
+    var dateArray = [v2018, v2019, v2020, v2021]
     var updateMarkers = document.getElementsByClassName("updated");
     for (let i = 0; i < updateMarkers.length; i++) {
         updateMarkers[i].title = dateArray[i];
