@@ -25,4 +25,9 @@
       <changefreq>yearly</changefreq>
       <priority>.5</priority>
 </url>
+<url>
+      <loc>https://dauntless-unseen.com/ARGS/DarkHarvest2021.html</loc>
+      <changefreq>yearly</changefreq>
+      <priority>.5</priority>
+</url>
 </urlset>
