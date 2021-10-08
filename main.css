@@ -211,6 +211,7 @@ center {
     font-family: Arial, Helvetica, sans-serif;
     border-left: 4px solid rgba(0, 0, 0, 0.4);
     padding: 10px;
+    background-color: #ebebeb;
 }
 
 .longdiv img {
