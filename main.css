@@ -217,6 +217,7 @@ center {
 .longdiv img {
     display:block;
     margin:auto;
+    margin-bottom: 5px;
 }
 
 .longdiv .candle {
