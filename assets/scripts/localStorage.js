@@ -55,7 +55,7 @@ function Updated() {
 }
 
 function LastUpdatedDate(event) {
-    if (event.target.location.pathname != "/") {
+    if (event.target.location.pathname.includes('ARGS')) {
         var updateDate = document.getElementById("date")
         var path = event.target.location.pathname;
         var pathIndex = path.indexOf('DarkHarvest') + 11;
