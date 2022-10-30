@@ -23,7 +23,8 @@ if (localStorage.getItem("ARG") === null) {
 
 window.addEventListener('load', (event) => {
     LastUpdatedDate(event)
-    if (event.target.location.pathname == "/") {
+    console.log(event.target.location.pathname);
+    if (event.target.location.pathname == "/DauntlessUnseen/") {
         Updated();
         if (VisitedARGs[2018] == v2018) {
             document.getElementById("ARG2018").style.display = "none";
