@@ -1,6 +1,6 @@
 /* Elements */
 :root {
-    --main-background-image: url(../assets/images/background.png);
+    --main-background-image: url(assets/images/background.png);
     --link-color-hover: purple;
 }
 
