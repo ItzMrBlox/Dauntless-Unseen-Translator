@@ -58,8 +58,8 @@ function LastUpdatedDate(event) {
     if (event.target.location.pathname != "/") {
         var updateDate = document.getElementById("date")
         var path = event.target.location.pathname;
-        var pathIndex = path.indexOf('DarkHarvest');
-        var pathSplice = path.substring(pathIndex, pathIndex + 5);
+        var pathIndex = path.indexOf('DarkHarvest') + 11;
+        var pathSplice = path.substring(pathIndex, pathIndex + 4);
         var v = eval(`v${pathSplice}`);
 
         var day = v.toString().substring(0, 2);
