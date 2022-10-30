@@ -43,7 +43,7 @@ window.addEventListener('load', (event) => {
 function Visit(id){
     VisitedARGs[eval(`${id}`)] = eval(`v${id}`);
     localStorage.setItem("ARG", JSON.stringify(VisitedARGs));
-    window.location.href = `/ARGS/DarkHarvest${id}.html`
+    window.location.href = `./ARGS/DarkHarvest${id}.html`
 }
 
 function Updated() {
